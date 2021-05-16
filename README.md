@@ -1,4 +1,9 @@
- [![WAVE CYBER SPORT GH-pages CI](https://github.com/IASAStudentCouncil/wave_cyber_sport/workflows/CI/badge.svg?branch=master)](https://iasastudentcouncil.github.io/wave_cyber_sport/)
+ 
+ MAIN PROJECT 
+ https://github.com/IASAStudentCouncil/wave_cyber_sport
+ *If this one not working properly just download the rep above and replace folder src with mine, I hope it would work*
+site https://exc1.github.io
+
 
 # About
  Wave Landing Page  
