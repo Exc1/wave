@@ -1,0 +1,578 @@
+
+
+.empty_test{
+    position: absolute;
+    color: black;
+    margin-top: -120px;
+}
+
+#dates {
+    #dota{
+    display: none;
+    }
+    transition: 0.5s linear;
+    margin-top: 130px;
+    margin-bottom: 160px;
+    font-family: Gilroy;
+    font-style: normal;
+    position: relative;
+    z-index: 10;
+
+    #skew {
+        position: absolute;
+        top: -200px;
+        height: 130px;
+        width: 100%;
+        background: black;    
+        transform: skewY(3.5deg);
+        z-index: 0;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 54px;
+        line-height: 67px;
+        text-shadow: none;
+        text-transform: none;
+        color: #000;
+        text-align: center;
+    }
+    
+    select {
+        display: block;
+        margin: 12px auto 0 auto;
+        border-radius: 6px;
+        text-align-last: center;
+        width: 147px;
+        height: 43px;
+        border: 3px solid black;
+        box-shadow: 0 4px 4px rgba(0,0,0,.57);
+        font-weight: 900;
+        z-index: 15;
+        option {
+            text-align: center;
+        }
+    }
+    
+    .mob-only {
+        display: none;
+    }
+    
+    #for-select {
+        transition: opacity ease 0.25s;
+    }
+    
+    .dates {
+        margin-top: 100px;
+    }
+
+    p.number {
+        text-align: center;
+        font-size: 64px;
+        line-height: 79px;
+        margin-bottom: 0;
+    }
+    #dota{
+    p.number {
+        margin-left: -10px;
+    }
+    p.nm-1{
+        margin-left: -25px;
+    }
+    p.nm-l{
+        margin-left: -55px;
+    }
+    p.gr2{
+    padding-left: -55px;
+    }
+    }
+    p.month {
+        text-align: start;
+        font-size: 36px;
+        line-height: 43px;
+        padding-left: 40px;
+
+    } 
+    p.gr-1{
+    padding-left: 100px;
+    }
+    
+    
+    .dsk-only {
+        
+        img {
+            width: 97.5%;
+        }
+        
+        .prog-bar {
+            width: 110%;
+            margin-top: 66px;
+            padding-left: 43px;
+            margin-bottom: 66px;
+        }
+    }
+    
+    .date {
+        margin-left: 50px;
+        
+        &:last-child {
+            margin-right: -40px;
+        }
+    }
+    
+    .date-heading {
+        font-weight: 900;
+        font-size: 38px;
+        line-height: 46px;
+    }
+    
+    .date-desc {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+
+
+.ws-no {
+    white-space: nowrap;
+}
+
+.gr {
+    font-family: Gilroy-Regular;
+}
+
+@media (max-width: 1300px) {
+    #dates {
+        h2 {
+            line-height: 65px;
+        }
+        
+        select {
+            width: 105px;
+            height: 31.43px;
+        }
+        
+        .dsk-only {
+                 
+            img {
+                width: 100%;
+            }
+            
+            p.date-heading {
+                font-size: 25px;
+                line-height: 31px;
+            }
+            
+            p.date-desc {
+                font-size: 18px;
+                line-height: 25px;
+            }
+            
+            .prog-bar {
+                width: 101%;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                padding-left: 33px;
+            }
+            
+            p.number {
+                text-align: start;
+                margin-left: 40px;
+                font-size: 35px;
+                line-height: 43px;
+            }
+
+
+
+            p.month {
+                margin-left: 0px;
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            
+        }
+        #dota{
+                p.number {
+                    margin-left: -85px;
+                }
+                p.nm-1{
+                    margin-left: -110px;
+                }
+                p.nm-l{
+                    margin-left: -125px;
+                }
+                p.gr-1{
+                    margin-left: -15px;
+                }
+                p.gr2{
+                    margin-left: -10px;
+                }
+            }
+        
+        .date {
+            margin-left: 40px;
+
+            &:last-child {
+                margin-right: -30px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+#dates {
+            #dota{
+                p.number {
+                    margin-left: -40px;
+                }
+                p.nm-1{
+                    margin-left: -75px;
+                }
+                p.nm-l{
+                    margin-left: -80px;
+                }
+                p.gr-1{
+                    margin-left: -25px;
+                }
+                p.gr2{
+                    margin-left: -10px;
+                }
+                }
+            }
+}
+@media (max-width: 991px) {
+    #skew{
+        top: -150px;
+        }
+    #dates {
+
+        .dsk-only {
+            display: none;
+        }
+        
+        select {
+            width: 20%;
+            height: 100%;
+        }
+        #dota{
+                p.l-1 {
+                    margin-top: 200px;
+                }}
+        .mob-only {
+
+            display: flex;
+            margin-top: 40px;
+            
+            .dates-left {
+                padding-right: 70px;
+            }
+            
+            .prog-bar {
+                top: 20px;
+                
+                img {
+                    height: 75%;
+                }
+            }
+            
+            p {
+                width: 120%;
+                text-align: end;
+                
+                &.date-heading:nth-of-type(3) {
+                    margin-top: 310px;
+                }
+                
+                &.date-desc:nth-of-type(4) {
+                    margin-left: -30%;
+                    width: 150%;
+                }
+                
+                &.date-heading:nth-of-type(5) {
+                    margin-top: 147px;
+                }
+                
+                &.number:nth-of-type(2) {
+                    margin-top: 252px;
+                }
+                
+                &.number:nth-of-type(3) {
+                    margin-top: 252px;
+                }
+                
+                &.number {
+                    text-align: left;
+                    padding-left: 0;
+                    font-size: 45px;
+                    line-height: 50px;    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #dates {
+        #skew {
+        margin-top: 15px;
+    }
+        .number {
+            font-size: 40px !important;
+            line-height: 47px !important;
+        }
+        #dota p.number {
+            font-size: 20px;
+            margin-left: 0px;
+            }
+        
+        .date-desc {
+            font-size: 19px !important;
+            line-height: 26px !important;
+            
+            &:nth-of-type(4) {
+                margin-left: -45% !important;
+                width: 170% !important;
+            }
+        }
+        
+        .date-heading:nth-of-type(5) {
+            margin-top: 117px !important;
+        }
+    }
+    
+}
+
+@media (max-width: 650px) {
+    #dates {
+
+        .mob-only {
+            height: 500px;
+
+        }
+        height: 820px ;
+        
+        .number {
+            font-size: 35px !important;
+            line-height: 40px !important;
+            
+            &:nth-of-type(2) {
+                margin-top: 185px !important;
+            }
+            
+            &:nth-of-type(3) {
+                margin-top: 185px !important;
+            }
+        }
+        
+        .date-desc {
+            font-size: 15px !important;
+            line-height: 21px !important;
+        }
+        
+        .date-heading {
+            font-size: 30px !important;
+            line-height: 37px !important;
+            
+            &:nth-of-type(3) {
+                margin-top: 225px !important;
+            }
+            
+            &:nth-of-type(5) {
+                margin-top: 75px !important;
+            }
+        }
+        
+        img {
+            height: 56% !important;
+        }
+        
+        
+    }
+    #skew {
+        margin-top: -100px;
+    }
+}
+
+@media (max-width: 576px) {
+    #dates {
+        #dota p.number {
+        font-size: 20px;
+        margin-bottom: -20px;
+        }
+        .mob-only {
+            height: 300px;
+        }
+        height: 500px !important;
+        
+        h2 {
+            font-size: 45px !important;
+        }
+        
+        .dates-left {
+            padding-right: 60px !important;
+        }
+        
+        .date-desc {
+            display: none;    
+        }
+        
+        .date-heading {
+            font-size: 22px !important;
+            
+            &:nth-of-type(3) {
+                margin-top: 127px !important;
+            }
+            
+            &:nth-of-type(5) {
+                margin-top: 127px !important;
+            }
+        }
+        
+        .prog-bar {
+            top: 15px !important;
+            height: 600px;
+            img{
+            height: 40%;
+            }
+        }
+        
+        .number {
+            font-size: 25px !important;
+            line-height: 30px !important;
+            
+            &:nth-of-type(2) {
+                margin-top: 107px !important;
+            }
+            
+            &:nth-of-type(3) {
+                margin-top: 107px !important;
+            }
+        }
+        
+        
+    }
+     #skew {
+        top: -100px;
+        }
+}
+
+
+    
+
+
+
+@media (max-width: 480px) {
+    #dates{
+            margin-top: 65px;
+            #skew{
+                    margin-top: 150px;
+                    height: 50px;
+    }}
+    
+}
+
+
+
+@media (max-width: 450px) {
+    #dates {
+        
+        select {
+            width: 30% !important;
+        }
+        
+        .date-heading {
+            //font-size: 16px !important;
+            
+            &:nth-of-type(5) {
+                margin-top: 90px !important;
+            }
+        }
+        
+        .number {
+            //font-size: 21px !important;
+            font-size: 22px ;
+        }
+    }
+}
+
+@media (max-width: 415px) {
+    #dates {
+        .dis{
+        display: none;
+        }
+        .number {
+            margin-left: -15px !important;
+            //font-size: 21px !important;
+            font-size: 20px !important;
+        }
+        .date-heading {
+            font-size: 19px !important;
+        }
+    }
+}
+@media (max-width: 375px) {
+    #dates {
+        .number {
+            margin-left: -15px !important;
+            //font-size: 21px !important;
+            font-size: 18px !important;
+        }
+        }}
+
+
+
+@media (max-width: 360px) {
+    #dates {
+        .number {
+            margin-left: 0px !important;
+            //font-size: 21px !important;
+            font-size: 18px !important;
+        }
+        margin-top: 70px;
+        .dates-left {
+            padding-right: 42px !important;
+        }
+        #dota{
+        .l-2{
+            font-size: 20px;
+        }
+        }
+        .prog-bar {
+            padding-right: 0;
+            width: 10px;
+        }
+        
+        .dates-right {
+            padding-left: 0 !important;
+        }
+        #skew{
+            margin-top: 150px;
+            height: 50px;
+    }
+}
+}
+
+
+
+
+
+
+@media (max-width: 320px) {
+    #dates{
+        .number {
+            //font-size: 21px !important;
+            font-size: 14px !important;
+        }
+        background-color:white;
+        margin-top: -10px;
+        padding-top: 20px;
+        #skew{
+            margin-top: 180px;
+            height: 30px;
+        
+        }
+    }
+}

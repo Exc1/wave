@@ -1,0 +1,15 @@
+#partners{
+  height: 100px;
+  width:100%;
+  background: rgba(20, 20, 20, 0.9);
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+}
+
+@media (max-width: $breakpoint-tablet-small) {
+  #partners.container.row{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

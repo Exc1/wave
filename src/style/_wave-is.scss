@@ -1,0 +1,444 @@
+#wave-is { //test
+   
+    color: white;
+    height: 100vh;
+    min-height: 50vh;
+    //transform: skewY(4deg);
+    background:rgba(0,0,0,1.0) url(../img/right.svg);
+    //height: 100%; /* You must set a specified height */
+    background-position: right; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 21%;
+    z-index:10;
+    min-height: 950px;
+    #skew{
+    margin-top: -80px;
+    z-index: -50;
+    
+
+    }
+
+
+}
+.add-height{
+    margin-top: 110px;
+    height: 80px;
+    background: black;
+}
+
+.head{
+    text-align: center;
+}
+
+
+.gradient-text {
+    background: linear-gradient(106.81deg, #D629FF 0%, #5EA1FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #D629FF;
+    font-family: Gilroy;
+    //display: table;
+    //margin: 20px auto;
+}
+
+.pink{
+    font-family: Gilroy;
+    color: $mypink;
+}
+
+.blue{
+    font-family: Gilroy;
+    color: $myblue;
+}
+
+h5{
+    font-size: 34px;
+    line-height: 42px;
+    margin-bottom: 50px;
+}
+
+.row-wave{
+    background-color: white;
+    //height: 150px;
+    border-radius: 0px 150px 150px 0px;
+    width: 60%;
+    height: 300px;
+    position: relative;
+    z-index:2;
+}
+.row-left{
+    background: url(../img/left_desktop_wave.jpg);
+    //height: 100%; /* You must set a specified height */
+    background-position: right; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 120%;
+    top: 180px;
+    height: 256px;
+    width: 415px;
+    position:absolute;
+    right: 20%;
+    z-index:1;
+    border-radius: 30px;
+}
+
+.row-wave.right{
+    margin-left: auto;
+    background-color: white;
+    border-radius: 150px 0px 0px 150px;
+    width: 60%;
+    height: 300px;
+    position: relative;
+    margin-top: 74px;
+    z-index:2;
+    //right: 0px;
+}
+
+.row-right{
+    background: url(../img/right_desktop_wave.jpg);
+    //height: 100%; /* You must set a specified height */
+    background-position: right; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 120%;
+    top: 460px;
+    height: 256px;
+    width: 415px;
+    position:absolute;
+    left: 20%;
+    z-index:1;
+    border-radius: 30px;
+}
+
+.f26{
+    font-size: 26px;
+    line-height: 32px;
+    color: #000000;
+    margin-left: 10%;
+    margin-right: 15%;
+    margin-top: 6%;
+}
+
+.f26.f26left{
+    margin-top: 3%;
+}
+
+.fbold{
+    font-family: Gilroy;
+}
+
+@media (max-width: 1200px) {
+    #wave-is{
+    min-height: 950px;
+    }
+    .row-left{
+        background-size: 120%;
+        top: 190px;
+        right:13%;
+    }
+    .row-right{
+        background-size: 120%;
+        top: 580px;
+        left: 10%;
+        z-index:1;
+    }
+    #wave-is .right {
+    padding-top: 0px;
+    padding-left: 20px;
+}
+    #wave-is .left {
+    padding-top: 40px;
+}
+}
+
+
+@media (max-width: 1025px) {
+    #wave-is{
+        min-height: 70vh;
+        height: 40vh;
+        background-size: 33%;
+        padding-bottom: 800px;
+    }
+    .row-wave, .row-wave.right{
+        width: 70%;
+        height:190px;
+    }
+    .row-wave .row .left{
+        padding-top: 55px;
+    }
+    .row-wave.right{
+        margin-top: 167px;
+    }
+    #wave-right{
+        padding-top: 24px;
+    }
+    .f26{
+        margin-top: 0px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .row-left, .row-right{
+        width: 242*1.2px;
+        height: 150*1.2px;
+        border-radius: 20px;
+    }
+    .row-left{
+        right: 15%;
+    }
+    .row-right{
+        left: 10%;
+        top: 440px;
+    }
+    #wave-is .left {
+        padding-top: 45px;
+    }
+    #wave-is .right {
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+    
+}
+
+@media (max-width: 768px){
+    #wave-is{
+        
+        height: 99vh;
+        background-size: 49%;
+        #skew{
+            margin-top: -70px;
+    }
+    }
+    .row-wave .row .left {
+        padding-top: 45px;
+    }
+    .f26.f26left {
+        margin-right: 10%;
+        margin-top: 1%;
+        margin-left: 18%;
+    }
+
+
+
+    #wave-is .left {
+    padding-top: 40px;
+    height: 250px;
+    }
+    #wave-is .right {
+    padding-top: 20px;
+    padding-left: 10px;
+    height: 250px;
+    }
+    .col-auto{
+    text-align:center;
+    }
+}
+
+
+@media (max-width: 576px){
+    #wave-is{
+        padding-bottom: 900px;
+        margin-bottom: -29px;
+        #skew{
+            margin-top: -35px;
+            height: 70px;
+            background-color: black;
+
+        }
+        .row-wave{
+            height: 220px;
+        }
+        .left{
+            margin-top: 0px;
+        }
+        .right {
+            height: 250px;
+            width: 90%;
+        }
+        #wave-right{
+            margin-top: 0px;
+        }
+    }
+}
+
+@media (max-width: 524px) {
+    .add-height{
+        display:none;
+    }
+    .row-left{
+        background-size: 120%;
+        top: 280px;
+        right:2%;
+    }
+    .row-right{
+        background-size: 120%;
+        top: 480px;
+        left: 3%;
+        z-index:1;
+    }
+    #wave-is{
+        margin-top: -5px;
+        padding-top: 25px;
+        height: 90vh;
+        background-size: 50%;
+        #skew{
+            margin-top: 50px;
+            height: 70px;
+            background-color: black;
+
+        }
+        .row-wave{
+            height: 220px;
+        }
+        .left{
+            margin-top: -10px;
+        }
+        .right {
+            margin-top: 200px;
+            height: 250px;
+            width: 90%;
+        }
+        #wave-right{
+            margin-top: 0px;
+        }
+        
+}}
+
+@media (max-width: 475px){
+    #wave-is{
+        margin-top: 50px;
+        background:#000000 url(../img/left_mob.svg) no-repeat center center;
+        background-size: 100%;
+        background-position: 0px 90px;
+        height: 106vh;
+    }
+    h5{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .f26{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .row-wave{
+        margin-top: 70px;
+        height: 100px;
+        width: 80%;
+    }
+    .row-wave.right{
+        height: 120px;
+        width: 80%;
+    }
+    .row-wave .row .left {
+        padding-top: 10px!important;
+    }
+    #wave-right{
+        padding-top: 0px!important;
+    }
+    .f26.f26left{
+        text-align: right;
+        margin-right: 0px;
+        margin-top: 3%;
+    }
+    .row-left, .row-right{
+        width: 194px;
+        height: 120px;
+    }
+    .row-left{
+        right: 7%;
+        top: 245px;
+    }
+    .row-right{
+        left: 7%;
+        top: 530px;
+    }
+    .row.head{
+        height: 50px;
+    }
+
+}
+
+
+
+@media (max-width: 414px) {
+    .add-height{
+        display:none;
+        height: 100px;
+        margin: 0;
+        margin-top:100px;;
+
+        background-color: black;
+    }
+    .row-left{
+        top: 240px;
+        right:2%;
+    }
+    .row-right{
+        top: 500px;
+        left: 3%;
+    }
+    #wave-is{
+        background-size: 150%;
+        padding-bottom: 620px;
+        margin-bottom: -36px;
+        max-height: 800px;
+        #skew{
+            margin-top: 20px;
+            height: 70px;
+            background-color: black;
+
+        }
+        h5{
+        font-size: 25px;
+        }
+        .row-wave{
+            height: 120px;
+        }
+        .left{
+            margin-top: 8px;
+        }
+        .right {
+            margin-top: 120px;
+            height: 130px;
+            width: 90%;
+        }
+        #wave-right{
+            margin-top: -13px;
+        }
+    }
+}
+@media (max-width: 475px){
+    #wave-is{
+        max-height: 720px;}
+}
+
+
+@media (max-width: 320px) {
+
+    #wave-is{
+        min-height: 750px;
+        height: 120vh;
+        .left{
+            margin-top: 8px;
+        }
+        .right {
+
+            height: 150px;
+            width: 90%;
+        }
+        #wave-right{
+            margin-top: -8px;
+        }
+    }
+    .row-wave{
+        width: 90%;
+    }
+    .row-left{
+        top: 240px;
+        right:2%;
+    }
+    .row-right{
+        top: 500px;
+        left: 3%;
+    }
+    .row-wave.right{
+        height: 140px;
+    }
+}

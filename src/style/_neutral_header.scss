@@ -1,0 +1,53 @@
+.neutral{
+	background-color:black;
+	padding-top:316px;
+}
+
+.empty{
+	position: absolute;
+	top: 0;
+    left: 0;
+}
+
+.cyber_league_h2{
+	margin-top: 40px;
+	margin-bottom:316px;
+	text-align: end;
+	color: white;
+	font-family: Gilroy-Regular;
+	font-style: normal;
+	font-weight: 300; 
+	font-size: 72px;
+	line-height: 83px;
+	margin-right: -1.5rem;
+}
+
+
+
+@media (max-width:$breakpoint-mobile){
+
+}
+
+@media (max-width:991px){
+
+.cyber_league_h2{
+	font-size: 60px;
+	line-height: 59px;
+	margin-top: 20px;
+}
+.img-fluid{
+}
+}
+
+@media (max-width:767px){
+.cyber_league_h2{
+	font-family: Gilroy-Regular;
+	text-align:center;
+	font-size: 45px;
+	line-height: 32px;
+	text-align: right;
+
+}
+}
+
+

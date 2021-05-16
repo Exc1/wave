@@ -1,0 +1,226 @@
+.about{
+  background: url(../img/left.svg);
+  //height: 100%; /* You must set a specified height */
+  background-position: left; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 500px;
+  //-webkit-background-size: cover;
+  //-moz-background-size: cover;
+  //background-size: cover;
+  //-o-background-size: cover;
+  height:100vh;
+  min-height: 980px;
+  padding-top: 40px;
+}
+
+h3{
+  margin-top: 60px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 79px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  max-height: 112px;
+  margin-bottom: 40px;
+}
+
+p{
+  &.f35{
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 100px;
+  }
+  &.f30{
+    font-size: 25px;
+    line-height: 32px;
+  }
+}
+
+.bold-text{
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: light;
+}
+
+.rect-text-wrapper{
+  //border-radius: 50px;
+  //width: 80%;
+  //height:100px;
+  display: flex;
+  align-items: center;
+  //width: 50vw;
+  width: 95%;
+  margin: auto;
+  //max-width: 22em;
+  height: 150px;
+  text-align: left;
+  position: relative;
+  padding: 10px 25px 0px 25px;
+  box-sizing: border-box;
+
+  $border: 8px;
+  color: #000;
+  background: #FFF;
+  background-clip: padding-box; /* !importanté */
+  border: solid $border transparent; /* !importanté */
+  border-radius: 38px;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -$border; /* !importanté */
+    border-radius: inherit; /* !importanté */
+    background: linear-gradient(to right, #FF00FF, #78E6FF);
+  }
+}
+
+.col-text{
+  height: 80%;
+}
+
+.row-100{
+  height:100%
+}
+
+.rect-wrap{
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+
+
+@media (max-width:1200px){
+  .about{
+    background-size: 450px;
+    height: 90vh;
+  }
+  .col-text{
+    height:500px;
+  }
+  .row-100{
+    height:77%;
+  }
+  p.f35{
+    margin-bottom: 0px;
+    max-width:476px;
+  }
+  .rect-wrap{
+    height: 90%;
+  }
+  .rect-text-wrapper{
+    width: 100%;
+    height: 139px;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 20px 25px 0px 45px;
+  }
+  p.f30{
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width:$breakpoint-tablet-small){
+  .rect-wrap{
+    height: 100%;
+  }
+  .rect-text-wrapper{
+    width: 479px;
+    height: 139px;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 20px 25px 0px 45px;
+  }
+  p.f30{
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: $breakpoint-mobile){
+
+  .about {
+    background: url(../img/left_mob.svg) no-repeat center center;
+    background-size: 100%;
+    background-position: 0px 80px;
+    height: 90vh;
+    min-height: 750px;
+  }
+  .col-text{
+    height: 112px;
+  }
+  h3{
+    margin-top: 50px!important;
+    font-size: 30px!important;
+    line-height: 37px!important;
+    //margin-bottom: 0px!important;
+  }
+  .f35{
+    font-size: 18px!important;
+    line-height: 22px!important;
+    padding-left: 46px!important;
+    padding-right: 70px!important;
+  }
+  p.f30{
+    font-size: 15px!important;
+    line-height: 19px!important;
+  }
+  .rect-text-wrapper{
+    height: 90px;
+    width: 310px;
+    padding-left: 30px;
+    padding-top: 17px;
+    padding-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 70px!important;
+    border:solid 3px transparent!important;
+    background-clip: border-box!important;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: $breakpoint-mobile-small){
+  p.f35{
+    padding-right: 30px!important;
+  }
+  .rect-text-wrapper{
+    width: 30%;
+  }
+  h5{
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 991px){
+  .col-text{
+    height:200px;
+  }
+  .rect-wrap{
+    height: 70%;
+  }
+  .rect-text-wrapper{
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  }
+@media (max-width: 414px) {
+  .about {
+    min-height: 890px;
+  }
+}
+
+
+  @media (max-width: 375px) {
+  .about {
+    height: 90vh;
+    min-height: 820px;}
+  }
