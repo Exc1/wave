@@ -301,16 +301,16 @@ h5{
         
 }}
 
-@media (max-width: 475px){
+@media (max-width: 414px){
     #wave-is{
-        margin-top: 50px;
+        margin-top: 0px;
         background:#000000 url(../img/left_mob.svg) no-repeat center center;
         background-size: 100%;
         background-position: 0px 90px;
         height: 106vh;
     }
     h5{
-        font-size: 18px;
+        font-size: 22px;
         line-height: 22px;
     }
     .f26{
@@ -404,6 +404,8 @@ h5{
         }
     }
 }
+
+
 @media (max-width: 475px){
     #wave-is{
         max-height: 720px;}
